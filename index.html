@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="adaptive.css">
     <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <title>Document</title>
+    <title>War for love!</title>
 </head>
 <body>
     <header class="header">
@@ -18,12 +18,12 @@
                 <span class="burger__button"></span>
             </button>
             <ul class="navigation">
-                <li class="navigation__item"><a class="navigation__link" href="">About</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">News</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">Music</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">Media</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">Tours</a></li>
-                <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#about">About</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#news">News</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#music">Music</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#media">Media</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#tours">Tours</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="#contacts">Contact</a></li>
             </ul>
         </nav>
         <section class="header__container wrapper">
@@ -42,7 +42,7 @@
         </section>
     </header>
     <main>
-        <section class="animated_item news wrapper ">
+        <section id="news" class="animated_item news wrapper ">
             <div class="news__container bordersmooth">
                 <img class="news__image" src="/content/images/news1.png" alt="">
                 <p class="news__text bordersmooth">Working on my upcoming full-lenth album that`s releasing later this year.</p>
@@ -57,7 +57,7 @@
                     Stream it here!</p>
             </div>
         </section>
-        <section class="about wrapper">
+        <section id="about" class="about wrapper">
             <div class="about__article">
                 <div class="about__header">
                     <div data-type="equalizer" class="equalizer">
@@ -102,15 +102,11 @@
                 </div>
             </div>
             <div class="about__photo">
-                <div class="about__image image-top bordersmooth">
-                    <img src="/content/images/about1.png" alt="">
-                </div>
-                <div class="about__image image-bottom bordersmooth">
-                    <img src="/content/images/about2.png" alt="">
-                </div>
+                <img class="about__image about__image-top bordersmooth" src="/content/images/about1.png" alt="">
+                <img class="about__image about__image-bottom bordersmooth" src="/content/images/about2.png" alt="">
             </div>
         </section>
-        <section class="bordersmooth quote wrapper">
+        <section id="media" class="bordersmooth quote wrapper">
             <div class="quote__container">
                 <p class="quote__text">“In an age where mainstream music is designed to be as
                     easily consumed as possible, listening to Bright Lights is
@@ -124,7 +120,7 @@
                 <img class="bordersmooth" src="/content/images/mtv.png" alt="mtv_quote">
             </div>
         </section>
-        <section class="playlist wrapper">
+        <section id="music"  class="playlist wrapper">
             <div class="playlist__image_container">
                 <img class="playlist__image" src="/content/images/player.png" alt="playing music">
             </div>
@@ -178,7 +174,7 @@
                 </div>
             </div>
         </section>
-        <section class="gallery wrapper">
+        <section id="tours" class="gallery wrapper">
             <div class="gallery__item item-big item-vertical">
                 <img class="gallery__image bordersmooth" src="/content/images/grid-left.png" alt="gallery1">
                 <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
@@ -285,7 +281,7 @@
             <p class="footer__management">Artist Management:    Jake Henny</p>
             <p class="footer__email">EMAIL:     <a href="mailto:jake@brightlightsofficial.com">jake@brightlightsofficial.com</a></p>
         </div>
-        <nav class="footer__social">
+        <nav id="contacts" class="footer__social">
             <a class="footer__link" href=""><img src="/content/images/apple.svg" alt=""></a>
             <a class="footer__link" href=""><img src="/content/images/spoty.svg" alt=""></a>
             <a class="footer__link" href=""><img src="/content/images/inst.svg" alt=""></a>

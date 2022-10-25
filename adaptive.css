@@ -34,8 +34,6 @@
     }
 
     .navigation.open {
-        border-left: 2px solid #7A66CC;
-        border-radius: 25px;
         transform: translateY(0);
         max-width: max-content;
         opacity: 1;
@@ -78,12 +76,27 @@
         max-width: 650px;
     }
 
-    .image-top {
-        transform: translateX(-10%);
+    .about {
+        gap: 25px;
     }
 
-    .image-top:hover {
-        transform: translateX(-10%);
+    .about__photo {
+        min-width: 300px;
+        min-height: 300px;
+    }
+
+    .about__image-bottom {
+        left: -25%;
+        bottom: -100%;
+    }
+
+    .about__image-bottom:hover{
+        bottom: -100%;
+        left: -25%;
+        opacity: 1;
+        z-index: 3;
+        transform: scale(1.05);
+        border: 2px solid #7A66CC;
     }
 
     .about__article {
@@ -110,6 +123,12 @@
 }
 
 @media screen and (max-width:425px) {
+    .header__title {
+        font-size: 80px;
+        font-weight: 600;
+        line-height: 60px;
+    }
+    
     .wrapper {
         max-width: 400px;
     }
@@ -126,20 +145,22 @@
     }
 
     .about {
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 
-    .image-top {
-        transform: translateX(0);
+    .about__image-top, .about__image-top:hover {
+        left: -5%;
     }
 
-    .image-top:hover {
-        transform: translateX(0) scale(1.2);
+    .about__image-bottom, .about__image-bottom:hover {
+        left: -10%;
+        bottom: -100%;
     }
 
     .quote {
         flex-direction: column-reverse;
-        margin-top: 350px;
+        margin-top: 750px;
+        max-width: 370px;
     }
 
     .playlist__image {
@@ -180,9 +201,7 @@
     }
 
     .navigation.open {
-        /* max-width: 350px; */
         flex-direction: column;
-        /* gap: 5px; */
     }     
     
     
@@ -191,10 +210,41 @@
     }
 
     .about__infolist {
-        display: none;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
     }
 
-    .about__photo {
-        display:none
+    .about__image-bottom, .about__image-bottom:hover {
+        left:-5%;
+    }
+}
+
+
+@media screen and (max-width:320px) {
+    .header__title {
+        font-size: 80px;
+        line-height: 70px;
+    }
+    
+    .wrapper {
+        max-width: 290px;
+    }
+
+    .navigation.open {
+        flex-direction: column;
+    }     
+    
+    
+    .playlist__image {
+        max-width: 300px;
+    }
+
+    .about__infolist {
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(4,1fr);
+    }
+
+    .about__image-bottom, .about__image-bottom:hover {
+        left:-5%;
     }
 }
