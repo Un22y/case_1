@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="adaptive.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="header__navigation wrapper">
+            <img class="logo" src="/content/images/logo.png" alt="logo">
+            <button class="header__burger">
+                <span class="burger__button"></span>
+            </button>
+            <ul class="navigation">
+                <li class="navigation__item"><a class="navigation__link" href="">About</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="">News</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="">Music</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="">Media</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="">Tours</a></li>
+                <li class="navigation__item"><a class="navigation__link" href="">Contact</a></li>
+            </ul>
+        </nav>
+        <section class="header__container wrapper">
+            <h2 class="header__subtitle">New Single</h2>
+            <h1 class="header__title">War For Love</h1>
+            <div data-type="player" class="music__container">
+                <button data-type="playButton" class="music__button">
+                    <i data-type="icon" class="material-icons" style="color:white; font-size: 50px;">play_arrow</i>
+                </button>
+                <div data-type="progressContainer" class="music__progressbar">
+                    <div data-type="progressBar" class="music__progress"></div>
+                </div>
+                <p data-type="timer" class="music__timer">00:00-00:00</p>
+                <audio id="song" src="content/audio/02.mp3"></audio>
+            </div>
+        </section>
+    </header>
+    <main>
+        <section class="animated_item news wrapper ">
+            <div class="news__container bordersmooth">
+                <img class="news__image" src="/content/images/news1.png" alt="">
+                <p class="news__text bordersmooth">Working on my upcoming full-lenth album that`s releasing later this year.</p>
+            </div>
+            <div class="news__container bordersmooth">
+                <img class="news__image" src="/content/images/news2.png" alt="">
+                <p class="news__text bordersmooth">Halloween vibes. <br>Listen my new track!</p>
+            </div>
+            <div class="news__container bordersmooth">
+                <img class="news__image" src="/content/images/news3.png" alt="">
+                <p class="news__text bordersmooth">WarForLove is OUT NOW!!<br> 
+                    Stream it here!</p>
+            </div>
+        </section>
+        <section class="about wrapper">
+            <div class="about__article">
+                <div class="about__header">
+                    <div data-type="equalizer" class="equalizer">
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                        <p data-type="stick" class="equalizer__item "></p>
+                    </div>
+                    <h2 class="about__title">Bright Lights</h2>
+                </div>
+                <p class="about__text">Bright Lights is a multi-Grammy nominated singer, songwriter, DJ and record producer. She has written for numerous <br><br> pop stars including Britney Spears, Justin Bieber, Usher and Beyoncé. Her catalog has amassed over 1 billion streams worldwide. More than 100 million of those streams can be attributed to her artist career and include such hits as Porter Robinson's "Language," 3LAU's "How You Love Me" and her own single "Runaway." She was also a featured vocalist on Zedd's #1 Clarity album. Her latest music video, "Put It Down," reached 1 million streams in the first week, releasing independently. Bright Lights is currently in the studio working on a self-produced album slated for release in 2020. </p>
+                <div class="about__infolist">
+                    <div class="about__infoitem">
+                        <div class="dot"></div>
+                        <p class="about__infotext">Based in: Los Angeles</p>
+                    </div>
+                    <div class="about__infoitem">
+                        <div class="dot"></div>
+                        <p class="about__infotext">Founded in 2011</p>
+                    </div>
+                    <div class="about__infoitem">
+                        <div class="dot"></div>
+                        <p class="about__infotext">Genre: #DancePop</p>
+                    </div>
+                    <div class="about__infoitem">
+                        <div class="dot"></div>
+                        <p class="about__infotext">Label: 333 Recordings</p>
+                    </div>
+                </div>
+            </div>
+            <div class="about__photo">
+                <div class="about__image image-top bordersmooth">
+                    <img src="/content/images/about1.png" alt="">
+                </div>
+                <div class="about__image image-bottom bordersmooth">
+                    <img src="/content/images/about2.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="bordersmooth quote wrapper">
+            <div class="quote__container">
+                <p class="quote__text">“In an age where mainstream music is designed to be as
+                    easily consumed as possible, listening to Bright Lights is
+                    refreshing, to say the least. Her sound is perfect for radio
+                    but complex enough to separate her from other pop newcomers.”
+                </p>
+                <hr>
+                <a class="quote__author" href="https://PopULove.net">PopULove.net</a>
+            </div>
+            <div class="quote__image bordersmooth">
+                <img class="bordersmooth" src="/content/images/mtv.png" alt="mtv_quote">
+            </div>
+        </section>
+        <section class="playlist wrapper">
+            <div class="playlist__image_container">
+                <img class="playlist__image" src="/content/images/player.png" alt="playing music">
+            </div>
+            <div class="playlist__player">
+                <div class="playlist__header">
+                    <div data-type="equalizer" class="equalizer">
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                        <p data-type="stick" class="equalizer__item"></p>
+                    </div>
+                    <h2 class="about__title">Last tracks</h2>
+                </div>
+                <div data-type="player" class="playlist__container">
+                    <div class="music__container">
+                        <button data-type="playButton" class="music__button">
+                            <i data-type="icon" class="material-icons" style="color:white; font-size: 50px;">play_arrow</i>
+                        </button>
+                        <div data-type="progressContainer" class="music__progressbar">
+                            <div data-type="progressBar" class="music__progress"></div>
+                        </div>
+                        <p data-type="timer" class="music__timer">00:00-00:00</p>
+                        <audio id="song" data-start="_1" src="/content/audio/01.mp3"></audio>
+                    </div>
+                    <div data-type="playlist" class="playlist__list">
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/01.mp3">01. 3LAU, Bright Lights — How You Love Me</a>
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/02.mp3">02. Bright Lights, Kaleena Zanders, Kandy — War For Love</a>
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/03.mp3">03. Pink Is Punk, Benny Benassi, Bright Lights — Ghost</a>
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/04.mp3">04. Hardwell, Dyro, Bright Lights — Never Say Goodbye</a>
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/05.mp3">05. Zeds Dead, Dirtyphonics, Bright Lights — Where Are You Now</a>
+                        <a class="playlist__song"  data-type="songname" data-value="/content/audio/06.mp3">06. Zedd, Bright Lights — Follow You Down</a>
+                    </div>
+                </div>
+                <div class="playlist__social">
+                    <h2 class="playlist__subtitle">Follow me:</h2>
+                    <a class="playlist__link" href=""><img src="/content/images/spoty2.svg" alt="spoty"></a>
+                    <a class="playlist__link" href=""><img src="/content/images/itunes.svg" alt="itunes"></a>
+                </div>
+            </div>
+        </section>
+        <section class="gallery wrapper">
+            <div class="gallery__item item-big item-vertical">
+                <img class="gallery__image bordersmooth" src="/content/images/grid-left.png" alt="gallery1">
+                <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
+            </div>
+            <div class="gallery__item item-small">
+                <img class="gallery__image bordersmooth" src="/content/images/grid-top1.png" alt="gallery2">
+                <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
+            </div>
+            <div class="gallery__item item-small">
+                <img class="gallery__image bordersmooth" src="/content/images/grid-top2.png" alt="gallery3">
+                <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
+            </div>
+            <div class="gallery__item item-big horizontal">
+                <img class="gallery__image bordersmooth" src="/content/images/grid-bottom.png" alt="gallery4">
+                <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
+            </div>
+            <div class="gallery__item item-big item-vertical">
+                <img class="gallery__image bordersmooth" src="/content/images/grid-right.png" alt="gallery5">
+                <p class="gallery__hovertext">EDC Las Vegas Mainstage</p>
+            </div>
+        </section>
+        <section data-type="slider" class="events">
+            <div data-type="button" data-value="next" class="next__button dot">
+                <p class="next__arrow"></p>
+            </div>
+            <div data-type="button" data-value="prev" class="prev__button dot">
+                <p class="prev__arrow"></p>
+            </div>
+            <div data-type="container" class="slider__container wrapper">
+                <div data-type="list" class="slider__display">
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event1.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event2.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event3.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event1.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event2.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div data-type="item" class="slider__item">
+                        <img class="bordersmooth" src="/content/images/event3.png" alt="">
+                        <div class="item__description">
+                            <p class="item__title">Chandler, AZ</p>
+                            <p class="item__place">The Park at Wild Horse Pass</p>
+                            <div class="item__bottom">
+                                <p class="item__title">Apr 02 2021</p>
+                                <p class="ticket bordersmooth">Tickets</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+        </section>
+    </main>
+    <footer class="footer">
+        <img src="/content/images/logo.png" alt="logo">
+        <div class="footer__contacts">
+            <p class="footer__management">Artist Management:    Jake Henny</p>
+            <p class="footer__email">EMAIL:     <a href="mailto:jake@brightlightsofficial.com">jake@brightlightsofficial.com</a></p>
+        </div>
+        <nav class="footer__social">
+            <a class="footer__link" href=""><img src="/content/images/apple.svg" alt=""></a>
+            <a class="footer__link" href=""><img src="/content/images/spoty.svg" alt=""></a>
+            <a class="footer__link" href=""><img src="/content/images/inst.svg" alt=""></a>
+            <a class="footer__link" href=""><img src="/content/images/yt.svg" alt=""></a>
+            <a class="footer__link" href=""><img src="/content/images/twitter.svg" alt=""></a>
+            <a class="footer__link" href=""><img src="/content/images/fb.svg" alt=""></a>
+        </nav>
+        <p class="copyright">©  2020 DJ bright lights.</p>
+    </footer>
+</body>
+<script src="script.js"></script>
+<script src="animation.js"></script>
+</html>
