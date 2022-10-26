@@ -348,7 +348,6 @@ ul {
     grid-template-columns: repeat(3,1fr);
     gap: 30px;
     opacity: 0;
-    /* margin-bottom: 180px; */
     transition: 1s all;
 }
 
@@ -446,40 +445,35 @@ ul {
 
 .about__photo {
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 445px;
-    height: 456px;
+    min-width: 445px;
+    min-height: 445px;
 }
+
+
+
 
 .about__image {
     position: absolute;
+    transition: .5s ease-out;
 }
 
-.image-top{
-    transform: translateY(-10%);
+.about__image-top{
     opacity: 1;
     z-index: 2;
-    transition: .5s ease-out;
-
 }
 
-.image-bottom {
+.about__image-bottom {
     bottom: 0;
-    transform: translateY(10%);
     right: 0;
     opacity: .3;
-    transition: .5s ease-out;
 }
 
-.image-top:hover {
-    transform: translateY(-10%);
+.about__image-top:hover {
     border: 2px solid #7A66CC;
     transform: scale(1.05);
 }
 
-.image-bottom:hover{
+.about__image-bottom:hover{
     bottom: 0;
     right: 0;
     transform: translateY(10%);
